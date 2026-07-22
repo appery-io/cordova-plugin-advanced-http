@@ -26,6 +26,9 @@
     <clobbers target="cordova.plugin.http"/>
   </js-module>
   <platform name="ios">
+    <hook type="after_plugin_install" src="hooks/patch-sd-network-activity-indicator.js"/>
+    <hook type="after_prepare" src="hooks/patch-sd-network-activity-indicator.js"/>
+    
     <config-file target="config.xml" parent="/*">
       <feature name="CordovaHttpPlugin">
         <param name="ios-package" value="CordovaHttpPlugin"/>
