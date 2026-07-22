@@ -63,7 +63,7 @@
     @synchronized(self)
     {
         counter = 0;
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+//        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     }
 }
 
